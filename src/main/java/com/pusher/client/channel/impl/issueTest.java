@@ -14,7 +14,7 @@ public class AmplitudeServiceSender {
         String payload = "{\"event_type\": \"DateOfBirthUpdate\", \"user_id\": \"YOUR_USER_ID\", \"event_properties\": {\"DateOfBirth\": \"" + formattedDateOfBirth + "\"}}";
 
         try {
-            // Set up the connection to the Amplitude API
+            // Set up the connection to the Amplitude APdfI
             URL url = new URL("https://api.amplitude.com/2/httpapi");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
